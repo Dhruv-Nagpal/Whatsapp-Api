@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div>
+     <a href="/chats" class="back-btn">← Back</a>
+     </div>
+     <br><br>
+     <div class="edit-container">
+    <h1>✏️ You are going to edit the chat!!</h1>
+    <p>Chat id is : <%= chat._id %> </p>
+
+    <form action="/chats/<%= chat._id %>?_method=PUT" method="post">
+        <input name="message" value="<%=chat.message %>" type="text" placeholder="edit the message!!">
+        <button class="edit-2">Update Chat</button>
+    </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #ece5dd;
+     margin: 0;
+     padding: 0;
+ }
+
+ h1 {
+     text-align: center;
+     background-color: #075e54;
+     color: white;
+     padding: 15px;
+     margin: 0;
+ }
+
+ .chat-container {
+     width: 60%;
+     margin: 20px auto;
+ }
+
+ .chat {
+     background-color: white;
+     padding: 10px 15px;
+     margin: 10px 0;
+     border-radius: 10px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ .from {
+     font-weight: bold;
+     color: #075e54;
+ }
+
+ .to {
+     font-size: 12px;
+     color: gray;
+ }
+
+ .message {
+     margin: 5px 0;
+     font-size: 16px;
+ }
+
+ .time {
+     font-size: 10px;
+     text-align: right;
+     color: gray;
+ }
+
+ .btns {
+     margin-top: 8px;
+ }
+
+ button {
+     border: none;
+     padding: 5px 10px;
+     margin-right: 5px;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .edit {
+     background-color: #25d366;
+     color: white;
+ }
+
+ .delete {
+     background-color: #ff4d4d;
+     color: white;
+ }
+
+
+ .new-chat-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    background-color: #25d366;
+    color: white;
+
+    border: none;
+    border-radius: 50px;
+
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    transition: all 0.2s ease;
+}
+
+.new-chat-btn:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.05);
+}
+
+.new-chat-btn:active {
+    transform: scale(0.95);
+}
+
+
+  .form-container {
+        background-color: white;
+        padding: 25px 30px;
+        border-radius: 12px;
+        width: 350px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        outline: none;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #25d366;
+    }
+
+    textarea {
+        resize: none;
+        height: 80px;
+    }
+
+    .create {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 6px;
+        background-color: #25d366;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .create:hover {
+        background-color: #1ebe5d;
+    }
+
+
+    .edit-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            width: 380px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+       
+
+        .chat-id {
+            text-align: center;
+            font-size: 12px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        input:focus {
+            border-color: #25d366;
+            box-shadow: 0 0 5px rgba(37, 211, 102, 0.3);
+        }
+
+        .edit-2 {
+            width: 100%;
+            margin-top: 15px;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .edit-2:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: #128c7e;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
